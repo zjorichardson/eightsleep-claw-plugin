@@ -1,6 +1,38 @@
 {
-  "name": "eightsleep",
+  "id": "eightsleep",
+  "name": "Eight Sleep",
   "version": "0.1.0",
   "description": "Eight Sleep pod control and sleep data",
-  "extensions": ["./dist/index.js"]
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "email": {
+        "type": "string",
+        "description": "Eight Sleep account email"
+      },
+      "password": {
+        "type": "string",
+        "description": "Eight Sleep account password"
+      },
+      "timezone": {
+        "type": "string",
+        "description": "IANA timezone (e.g., America/Chicago)"
+      }
+    },
+    "required": ["email", "password"]
+  },
+  "uiHints": {
+    "email": {
+      "label": "Email"
+    },
+    "password": {
+      "label": "Password",
+      "sensitive": true
+    },
+    "timezone": {
+      "label": "Timezone",
+      "placeholder": "America/Chicago"
+    }
+  }
 }
