@@ -1,0 +1,40 @@
+{
+  "name": "@openclaw/eightsleep",
+  "version": "0.1.0",
+  "description": "OpenClaw plugin for Eight Sleep pod control and sleep data",
+  "author": "Zachary Richardson",
+  "license": "UNLICENSED",
+  "private": true,
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "openclaw.plugin.json"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "clean": "rm -rf dist"
+  },
+  "openclaw": {
+    "extensions": ["./dist/index.js"]
+  },
+  "dependencies": {
+    "@sinclair/typebox": "^0.32.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.0"
+  },
+  "keywords": [
+    "openclaw",
+    "eightsleep",
+    "sleep",
+    "plugin"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zjorichardson/openclaw-plugin-eightsleep"
+  }
+}

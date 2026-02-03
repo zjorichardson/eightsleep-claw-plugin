@@ -1,0 +1,6 @@
+{
+  "name": "eightsleep",
+  "version": "0.1.0",
+  "description": "Eight Sleep pod control and sleep data",
+  "extensions": ["./dist/index.js"]
+}
